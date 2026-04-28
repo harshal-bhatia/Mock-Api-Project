@@ -106,6 +106,7 @@ export default function Home() {
     );
   };
 
+  console.log("checking auto deploy");
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-12 text-center space-y-3">
