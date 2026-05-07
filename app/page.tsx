@@ -131,18 +131,20 @@ export default function Home() {
               form.setValue("inputMode", v as "plain" | "schema")
             }
           >
-            <TabsList className="w-full grid grid-cols-2 bg-card border border-border">
+            <TabsList className="w-full grid grid-cols-1 sm:grid-cols-2 bg-card border border-border h-auto">
               <TabsTrigger
                 value="plain"
                 className="font-mono text-sm data-[state=active]:bg-primary/20 data-[state=active]:text-primary"
               >
-                <AlignLeft className="w-4 h-4 mr-2" /> Plain English
+                <AlignLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-2 shrink-0" />{" "}
+                Plain English
               </TabsTrigger>
               <TabsTrigger
                 value="schema"
                 className="font-mono text-sm data-[state=active]:bg-primary/20 data-[state=active]:text-primary"
               >
-                <Code2 className="w-4 h-4 mr-2" /> JSON Schema / TS Interface
+                <Code2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-2 shrink-0" />{" "}
+                JSON Schema / TS Interface
               </TabsTrigger>
             </TabsList>
 
